@@ -1,21 +1,25 @@
-# LAB - Class 32
+# LAB - Class 33
 
-## project name : drf-api-permissions-postgres
+# Project: moveis
 
-## **_Author: Amjad alsayyed_**
+## Author: Amjad Al-Sayyed
 
 ---
 
-## To Run project
+### How to initialize:
 
-> - to run this project you need to type in terminal 'docker compose up'
+#### tests:
 
-## Setup
+- access token route: 'api/token/'
+  you use this route to get access token for the first time and then use the access token in the request body to get the access permission.
+- refresh token route: 'api/token/refresh/'
+  use this route to get access token after it gets expired and then use the access token in the request body to get the access permission
+- 'api/movie': use this route for anny CRUD operations
 
-> - To setup check the requirements.txt to install the required packages
+### how to run the server
 
-## Tests
+#### server: docker compose up
 
-### How do you run tests?
+### how to install requirements
 
-> - run python manage.py test
+#### pip install -r requirements.txt
